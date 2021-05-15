@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 2.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0.0,
+                "max": 1.0
+              }
+            }
+          ],
+          "name": "mobmeater:flesh"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "conditions": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                      "dimension": "minecraft:the_nether"
+                  }    
+                },
+				{
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                      "smokey": true
+                  }    
+                },
+				{
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                      "tag": "fences"
+                  }    
+                }
+              ],
+          "functions": [
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0.0,
+                "max": 1.0
+              }
+            }
+          ],
+          "name": "mobmeater:eternal_flesh"
+        }
+      ]
+    }
+  ]
+}

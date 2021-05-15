@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#B#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mobmeater:flesh"
+    },
+	"B": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "mobmeater:blood",
+    "count": 1
+  }
+}
