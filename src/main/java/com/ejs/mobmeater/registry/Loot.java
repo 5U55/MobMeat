@@ -15,7 +15,7 @@ public class Loot {
 	private static final Identifier GUARDIAN_LOOT = new Identifier("minecraft", "entities/guardian");
 	private static final Identifier MAGMA_LOOT = new Identifier("minecraft", "entities/magma");
 	private static final Identifier RAVAGER_LOOT = new Identifier("minecraft", "entities/ravager");
-	private static final Identifier SKELE_LOOT = new Identifier("minecraft", "entities/skeleton");
+	private static final Identifier SKELETON_LOOT = new Identifier("minecraft", "entities/skeleton");
 	private static final Identifier SLIME_LOOT = new Identifier("minecraft", "entities/slime");
 	private static final Identifier CREEPER_LOOT = new Identifier("minecraft", "entities/creeper");
 	
@@ -26,7 +26,7 @@ public class Loot {
 	private static final Identifier WITCH = new Identifier("minecraft", "entities/witch");
 
 	private static final Identifier[] LOOT_TABLES = { BLAZE_LOOT, ENDER_LOOT, ELDER_LOOT, GHAST_LOOT, GUARDIAN_LOOT,
-			MAGMA_LOOT, RAVAGER_LOOT, SKELE_LOOT, SLIME_LOOT, CREEPER_LOOT };
+			MAGMA_LOOT, RAVAGER_LOOT, SKELETON_LOOT, SLIME_LOOT, CREEPER_LOOT };
 	private static final Item[] DROPS = { ModItems.BLAZE_MEAT, ModItems.ENDER_MEAT, ModItems.ELDER_MEAT,
 			ModItems.GHAST_MEAT, ModItems.GUARDIAN_MEAT, ModItems.MAGMA_MEAT, ModItems.RAVAGER_MEAT,
 			ModItems.BONE_MARROW, ModItems.SLIME_MEAT, ModItems.CREEPER_MEAT };
