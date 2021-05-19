@@ -20,7 +20,7 @@ public class ModItems {
 	public static final Item RAVAGER_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food((new FoodComponent.Builder()).hunger(8).saturationModifier(9f).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 2000, 2), 1f).statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 1000, 1), 1f).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 2000, 3), 1f).meat().build()));
 	public static final Item BONE_MARROW = new Item(new Item.Settings().group(ItemGroup.FOOD).food((new FoodComponent.Builder()).hunger(3).saturationModifier(4f).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 1000, 1), 1f).meat().build()));
 	public static final Item SLIME_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food((new FoodComponent.Builder()).hunger(6).saturationModifier(9f).statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 1000, 3), 1f).meat().build()));
-	public static final Item CREEPER_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food((new FoodComponent.Builder()).hunger(8).saturationModifier(12f).statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 2000, 100), 1f).meat().build()));
+	public static final CreeperMeatItem CREEPER_MEAT = new CreeperMeatItem(new Item.Settings().group(ItemGroup.FOOD));
 	public static final Item FLESH = new Item(new Item.Settings().group(ItemGroup.FOOD).food((new FoodComponent.Builder()).hunger(5).saturationModifier(10f).meat().build()));
 	
 	public static final Item BLOOD = new Item(new Item.Settings().group(ItemGroup.FOOD).food((new FoodComponent.Builder()).hunger(5).saturationModifier(10f).statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 2400, 1), 1f).alwaysEdible().build()));
