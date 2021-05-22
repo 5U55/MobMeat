@@ -1,8 +1,5 @@
 package com.ejs.mobmeater.registry;
 
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.TimeUnit;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
@@ -30,13 +27,11 @@ public class CreeperMeatItem extends Item {
 			return TypedActionResult.success(itemStack);
 		} else {
 			if (!world.isClient) {
-				CompletableFuture.delayedExecutor(1, TimeUnit.SECONDS).execute(() -> {
 					user.world.createExplosion(user, user.getX(), user.getY(), user.getZ(), 4.0F, Explosion.DestructionType.BREAK);
 					user.onDeath(DamageSource.explosion(user));
 					user.setHealth(0);
 				//	user.kill();
 					world.playSoundFromEntity(user, user, SoundEvents.ENTITY_TNT_PRIMED, SoundCategory.BLOCKS, 1.0F, 1.0F);
-				});
 			}
 			return TypedActionResult.consume(itemStack);
 		}
