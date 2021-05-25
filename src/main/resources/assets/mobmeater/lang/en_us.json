@@ -1,16 +1,24 @@
 {
 	"item.mobmeater.ender_meat": "Endermeat",
+	"item.mobmeater.cooked_ender_meat": "Cooked Endermeat",
 	"item.mobmeater.creeper_meat": "The Creeper Escape",
 	"item.mobmeater.flesh": "Flesh",
 	"item.mobmeater.eternal_flesh": "Eternal Flesh",
 	"item.mobmeater.blood": "Bottle of Blood",
 	"item.mobmeater.blaze_meat": "Blaze Meat",
+	"item.mobmeater.cooked_blaze_meat": "Cooked Blaze Meat",
 	"item.mobmeater.elder_meat": "Elder Guardian Meat",
+	"item.mobmeater.cooked_elder_meat": "Cooked Elder Guardian Meat",
 	"item.mobmeater.ghast_meat": "Ghast Meat",
+	"item.mobmeater.cooked_ghast_meat": "Cooked Ghast Meat",
 	"item.mobmeater.guardian_meat": "Guardian Meat",
+	"item.mobmeater.cooked_guardian_meat": "Cooked Guardian Meat",
 	"item.mobmeater.magma_meat": "Magma Meat",
+	"item.mobmeater.cooked_magma_meat": "Cooked Magma Meat",
 	"item.mobmeater.ravager_meat": "Ravager Meat",
+	"item.mobmeater.cooked_ravager_meat": "Cooked Ravager Meat",
 	"item.mobmeater.bone_marrow": "Bone Marrow",
-	"item.mobmeater.slime_meat": "Slime Meat"
-
+	"item.mobmeater.cooked_bone_marrow": "Cooked Bone Marrow",
+	"item.mobmeater.slime_meat": "Slime Meat",
+	"item.mobmeater.cooked_slime_meat": "Cooked Slime Meat"
 }
