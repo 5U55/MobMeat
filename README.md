@@ -2,30 +2,30 @@
 
 This is a Fabric Minecraft mod for version 1.16.5
 
-This mod contains meat for hostile mobs, each with their own effect when consumed.
+This mod contains meat for hostile mobs, each with their own effect when consumed. 
 
 
-These have a chance of dropping 1-5 of the following
+These have a chance of dropping 1-5 of the following, each one restores 3 hunger raw and 8 hunger when cooked. When these meat are cooked in a furnace, smoker or campfire the status effect times are increased. 
 
-Blaze Meat - Slow Falling II and Glowing (5 seconds)
+Blaze Meat - Slow Falling II and Glowing (5 seconds/45 seconds)
 
-Creeper Meat - Causes an explosion and instantly kills the player
+Creeper Meat - Causes an explosion and instantly kills the player (no hunger restored and no time on effect as it is instant death)
 
-Ender Meat - Invisibility (5 seconds)
+Ender Meat - Invisibility (10 seconds/50 seconds)
 
-Elder Meat - Haste II (5 seconds)
+Elder Meat - Haste II (5 seconds/45 seconds)
 
-Ghast Meat - Slowness II and Fire Resistance II (5 seconds)
+Ghast Meat - Slowness II and Fire Resistance II (5 seconds/45 seconds)
 
-Guardian Meat - Dophins Grace (5 seconds)
+Guardian Meat - Dophins Grace (5 seconds/45 seconds)
 
-Magma Meat - Blindness (5 seconds)
+Magma Meat - Blindness (5 seconds/45 seconds)
 
-Ravager Meat - Speed III and Nausea II (10 seconds) and Levitation (5 seconds)
+Ravager Meat - Speed III and Nausea II (10 seconds/45 seconds) and Levitation (5 seconds/5 seconds)
 
-Sime Meat - Jump Boost III (5 seconds)
+Sime Meat - Jump Boost III (5 seconds/45 seconds)
 
-Bone Marrow (from skeletons) - Strength (10 seconds)
+Bone Marrow (from skeletons) - Strength (10 seconds/45 seconds)
 
 
 Villagers drop 1-2 Flesh and the remaining mobs drop 1-5
