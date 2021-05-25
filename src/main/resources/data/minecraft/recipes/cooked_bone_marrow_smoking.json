@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "mobmeater:bone_marrow"
+  },
+  "result": "mobmeater:cooked_bone_marrow",
+  "experience": 0.35,
+  "cookingtime": 200
+}

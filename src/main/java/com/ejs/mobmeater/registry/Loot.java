@@ -18,7 +18,7 @@ public class Loot {
 	private static final Identifier SKELETON_LOOT = new Identifier("minecraft", "entities/skeleton");
 	private static final Identifier SLIME_LOOT = new Identifier("minecraft", "entities/slime");
 	private static final Identifier CREEPER_LOOT = new Identifier("minecraft", "entities/creeper");
-	
+
 	private static final Identifier VILLAGER = new Identifier("minecraft", "entities/villager");
 	private static final Identifier PILLAGER = new Identifier("minecraft", "entities/pillager");
 	private static final Identifier EVOKER = new Identifier("minecraft", "entities/evoker");
@@ -36,17 +36,19 @@ public class Loot {
 			final int j = i;
 			LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
 				if (LOOT_TABLES[j].equals(id)) {
-					FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+					FabricLootPoolBuilder RawPoolBuilder = FabricLootPoolBuilder.builder()
 							.rolls(UniformLootTableRange.between(1, 5)).withEntry(ItemEntry.builder(DROPS[j]).build());
 
-					supplier.pool(poolBuilder);
+					supplier.pool(RawPoolBuilder);
 				}
 			});
 		}
 		LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
-			if (VILLAGER.equals(id)||PILLAGER.equals(id)||EVOKER.equals(id)||VINDICATOR.equals(id)||WITCH.equals(id)) {
+			if (VILLAGER.equals(id) || PILLAGER.equals(id) || EVOKER.equals(id) || VINDICATOR.equals(id)
+					|| WITCH.equals(id)) {
 				FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-						.rolls(UniformLootTableRange.between(1, 5)).withEntry(ItemEntry.builder(ModItems.FLESH).build());
+						.rolls(UniformLootTableRange.between(1, 5))
+						.withEntry(ItemEntry.builder(ModItems.FLESH).build());
 
 				supplier.pool(poolBuilder);
 			}

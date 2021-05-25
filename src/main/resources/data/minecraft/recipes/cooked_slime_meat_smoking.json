@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "mobmeater:slime_meat"
+  },
+  "result": "mobmeater:cooked_slime_meat",
+  "experience": 0.35,
+  "cookingtime": 200
+}

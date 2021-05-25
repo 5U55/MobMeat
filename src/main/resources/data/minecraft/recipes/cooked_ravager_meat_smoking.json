@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "mobmeater:ravager_meat"
+  },
+  "result": "mobmeater:cooked_ravager_meat",
+  "experience": 0.35,
+  "cookingtime": 200
+}

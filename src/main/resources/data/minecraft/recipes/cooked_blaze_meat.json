@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mobmeater:blaze_meat"
+  },
+  "result": "mobmeater:cooked_blaze_meat",
+  "experience": 0.35,
+  "cookingtime": 200
+}
