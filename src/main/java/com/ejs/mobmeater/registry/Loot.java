@@ -47,7 +47,7 @@ public class Loot {
 			if (VILLAGER.equals(id) || PILLAGER.equals(id) || EVOKER.equals(id) || VINDICATOR.equals(id)
 					|| WITCH.equals(id)) {
 				FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-						.rolls(UniformLootTableRange.between(1, 5))
+						.rolls(UniformLootTableRange.between(0, 2))
 						.withEntry(ItemEntry.builder(ModItems.FLESH).build());
 
 				supplier.pool(poolBuilder);
