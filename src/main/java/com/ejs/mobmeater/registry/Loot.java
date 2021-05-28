@@ -37,7 +37,7 @@ public class Loot {
 			LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
 				if (LOOT_TABLES[j].equals(id)) {
 					FabricLootPoolBuilder RawPoolBuilder = FabricLootPoolBuilder.builder()
-							.rolls(UniformLootTableRange.between(1, 5)).withEntry(ItemEntry.builder(DROPS[j]).build());
+							.rolls(UniformLootTableRange.between(0, 2)).withEntry(ItemEntry.builder(DROPS[j]).build());
 
 					supplier.pool(RawPoolBuilder);
 				}
