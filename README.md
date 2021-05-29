@@ -5,7 +5,7 @@ This is a Fabric Minecraft mod for version 1.16.5
 This mod contains meat for hostile mobs, each with their own effect when consumed. 
 
 
-These have a chance of dropping 1-5 of the following, each one restores 3 hunger raw and 8 hunger when cooked. When these meat are cooked in a furnace, smoker or campfire the status effect times are increased. 
+These have a chance of dropping 0-2 of the following, each one restores 3 hunger raw and 8 hunger when cooked. When these meat are cooked in a furnace, smoker or campfire the status effect times are increased. 
 
 **Blaze Meat** - Slow Falling II and Glowing (5 seconds/45 seconds)
 
@@ -28,7 +28,7 @@ These have a chance of dropping 1-5 of the following, each one restores 3 hunger
 **Bone Marrow (from skeletons)** - Strength (10 seconds/45 seconds)
 
 
-Villagers drop 1-2 Flesh and the remaining mobs drop 1-5
+Villagers drop 1-2 Flesh and the remaining mobs drop 0-2
 
 **Flesh** (dropped by villagers, pillagers, evokers, vindicators, and witches) - no effect, but 8 of these and a bottle can be crafted into **blood**, which gives Health Boost for 25 seconds
 
