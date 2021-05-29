@@ -1,5 +1,7 @@
 package com.ejs.mobmeater.registry;
 
+import com.ejs.mobmeater.Config;
+
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.minecraft.item.Item;
@@ -30,28 +32,34 @@ public class Loot {
 	private static final Item[] DROPS = { ModItems.BLAZE_MEAT, ModItems.ENDER_MEAT, ModItems.ELDER_MEAT,
 			ModItems.GHAST_MEAT, ModItems.GUARDIAN_MEAT, ModItems.MAGMA_MEAT, ModItems.RAVAGER_MEAT,
 			ModItems.BONE_MARROW, ModItems.SLIME_MEAT, ModItems.CREEPER_MEAT };
-
+	private static final String[] CONFIG_LABELS = {
+			Config.BLAZE_LOOT, Config.ENDER_LOOT, Config.ELDER_LOOT, Config.GHAST_LOOT, Config.GUARDIAN_LOOT, 
+			Config.MAGMA_LOOT,	Config.RAVAGER_LOOT, Config.SKELETON_LOOT, Config.SLIME_LOOT, Config.CREEPER_LOOT
+	};
 	public static void init() {
 		for (int i = 0; i < LOOT_TABLES.length; i++) {
 			final int j = i;
+			if(CONFIG_LABELS[j].equals("true")) {
 			LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
 				if (LOOT_TABLES[j].equals(id)) {
 					FabricLootPoolBuilder RawPoolBuilder = FabricLootPoolBuilder.builder()
-							.rolls(UniformLootTableRange.between(0, 2)).withEntry(ItemEntry.builder(DROPS[j]).build());
+							.rolls(UniformLootTableRange.between(1, 2)).withEntry(ItemEntry.builder(DROPS[j]).build());
 
 					supplier.pool(RawPoolBuilder);
 				}
+			});}
+		}
+		if (Config.FLESH.equals("true")) {
+			LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
+				if (VILLAGER.equals(id) || PILLAGER.equals(id) || EVOKER.equals(id) || VINDICATOR.equals(id)
+						|| WITCH.equals(id)) {
+					FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+							.rolls(UniformLootTableRange.between(0, 2))
+							.withEntry(ItemEntry.builder(ModItems.FLESH).build());
+
+					supplier.pool(poolBuilder);
+				}
 			});
 		}
-		LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
-			if (VILLAGER.equals(id) || PILLAGER.equals(id) || EVOKER.equals(id) || VINDICATOR.equals(id)
-					|| WITCH.equals(id)) {
-				FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-						.rolls(UniformLootTableRange.between(0, 2))
-						.withEntry(ItemEntry.builder(ModItems.FLESH).build());
-
-				supplier.pool(poolBuilder);
-			}
-		});
 	}
 }
